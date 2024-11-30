@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ua.edu.nuos.lab4cg.Controller">
+   <top>
+       <ToolBar prefHeight="40.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+           <Button mnemonicParsing="false" onAction="#openFile" text="Open..." />
+           <Button mnemonicParsing="false" onAction="#moveXplus" text="-&gt;" />
+           <Button mnemonicParsing="false" onAction="#moveXminus" text="&lt;-" />
+           <Button mnemonicParsing="false" onAction="#rotateXplus" text="Rx+" />
+           <Button mnemonicParsing="false" onAction="#rotateYplus" text="Ry+" />
+           <Button mnemonicParsing="false" onAction="#rotateZplus" text="Rz+" />
+           <Button mnemonicParsing="false" onAction="#rotateXminus" text="Rx-" />
+           <Button mnemonicParsing="false" onAction="#rotateYminus" text="Ry-" />
+           <Button mnemonicParsing="false" onAction="#rotateZminus" text="Rz-" />
+         <CheckBox mnemonicParsing="false" onAction="#repaint" text="Ensure Visibility" fx:id="ensureVisibility"/>
+       </ToolBar>
+   </top>
+   <center>
+       <Pane fx:id="pane" prefHeight="560.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+           <Canvas fx:id="canvas" height="560.0" width="800.0" />
+       </Pane>
+   </center>
+</BorderPane>
